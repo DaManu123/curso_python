@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 def Calcular_Y(x:float, m:float, b:float)->float:
     '''
     Calcula el valor de y en una linea recta
@@ -28,7 +30,12 @@ def test_linea():
     y = Calcular_Y(0.0, 2.0, 3.0)
     return y
 
-
+def grafica_linea(X: list, Y:list,m:float, b:float):
+    plt.plot(X, Y)
+    plt.title(f'Linea con pendiente {m} y ordenada al origen {b}')
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.show()
 if __name__ == '__main__':
     if test_linea() == 3.0:
         print('Todo chido')
