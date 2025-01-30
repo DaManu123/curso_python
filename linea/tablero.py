@@ -40,7 +40,7 @@ def usuario(simbolos: dict):
         #     simbolos[x] = 'X'
         #     ocupado = False
         # else:
-        #     print('ocupado')
+
 
 
 if __name__ == '__main__':
